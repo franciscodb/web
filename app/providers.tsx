@@ -1,55 +1,21 @@
 "use client";
 
-import "@rainbow-me/rainbowkit/styles.css";
-import { RainbowKitProvider, darkTheme } from "@rainbow-me/rainbowkit";
-import { WagmiProvider } from "wagmi";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import {config } from "@/src/lib/web3/config";  
+import { PrivyProvider } from "@privy-io/react-auth";
+import { arbitrumSepolia } from "viem/chains";
 
-/**
- * Cliente de React Query para manejo de estado asíncrono
- */
-const queryClient = new QueryClient({
-  defaultOptions: {
-    queries: {
-      refetchOnWindowFocus: false,
-      retry: 1,
-    },
-  },
-});
-
-/**
- * Providers component que envuelve toda la aplicación
- * 
- * Orden de los providers (importante):
- * 1. WagmiProvider - Conexión Web3
- * 2. QueryClientProvider - Estado asíncrono
- * 3. RainbowKitProvider - UI de wallets
- */
-export function Providers({ children }: { children: React.ReactNode }) {
+export default function Providers({ children }: { children: React.ReactNode }) {
   return (
-    <WagmiProvider config={config}>
-      <QueryClientProvider client={queryClient}>
-        <RainbowKitProvider
-          theme={darkTheme({
-            accentColor: "#0284c7", // Blue 600 - color principal
-            accentColorForeground: "white",
-            borderRadius: "medium",
-          })}
-          appInfo={{
-            appName: "PrestaChain MX",
-            disclaimer: ({ Text, Link }) => (
-              <Text>
-                Al conectar tu wallet aceptas los{" "}
-                <Link href="/terminos">términos y condiciones</Link> de
-                PrestaChain.
-              </Text>
-            ),
-          }}
-        >
-          {children}
-        </RainbowKitProvider>
-      </QueryClientProvider>
-    </WagmiProvider>
+    <PrivyProvider
+      appId={process.env.NEXT_PUBLIC_PRIVY_APP_ID || "tu-app-id-aqui"}
+      config={{
+        appearance: {
+          theme: "light",
+          accentColor: "#3b82f6",
+        },
+        loginMethods: ["sms", "email", "wallet"],
+      }}
+    >
+      {children}
+    </PrivyProvider>
   );
 }
