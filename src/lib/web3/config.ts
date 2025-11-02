@@ -7,7 +7,7 @@ if (!process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID) {
 }
 
 /**
- * Configuración de Wagmi y RainbowKit para PrestaChain
+ * Configuración de Wagmi y RainbowKit para BrightLend
  * 
  * Red principal: Arbitrum Sepolia (testnet)
  * - Chain ID: 421614
@@ -15,7 +15,7 @@ if (!process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID) {
  * - En producción se cambiaría a Arbitrum One
  */
 export const config = getDefaultConfig({
-  appName: process.env.NEXT_PUBLIC_APP_NAME || "PrestaChain MX",
+  appName: process.env.NEXT_PUBLIC_APP_NAME || "BrightLend MX",
   projectId: process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID,
   chains: [arbitrumSepolia],
   ssr: true, // Para Next.js App Router

@@ -6,7 +6,7 @@ import Providers from "./providers";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "PrestaChain - Préstamos P2P",
+  title: "BrightLend - Préstamos P2P",
   description: "Plataforma de préstamos peer-to-peer con inclusión financiera",
 };
 

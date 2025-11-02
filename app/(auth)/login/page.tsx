@@ -47,7 +47,7 @@ export default function LoginPage() {
             <span className="text-white font-bold text-3xl">P</span>
           </div>
           <h1 className="text-3xl font-bold text-gray-900 mb-2">
-            Bienvenido a PrestaChain
+            Bienvenido a BrightLend
           </h1>
           <p className="text-gray-600">
             Regístrate en segundos con tu teléfono

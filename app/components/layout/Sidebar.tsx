@@ -63,7 +63,7 @@ export function Sidebar() {
           <span className="text-white font-bold text-xl">P</span>
         </div>
         <div>
-          <h1 className="text-xl font-bold text-gray-900">PrestaChain</h1>
+          <h1 className="text-xl font-bold text-gray-900">BrightLend</h1>
           <p className="text-xs text-gray-500">Préstamos P2P</p>
         </div>
       </div>

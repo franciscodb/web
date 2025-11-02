@@ -26,7 +26,7 @@ export default function LandingPage() {
                 <span className="text-white font-bold text-xl">P</span>
               </div>
               <div>
-                <span className="text-xl font-bold text-gray-900">PrestaChain</span>
+                <span className="text-xl font-bold text-gray-900">BrightLend</span>
                 <span className="ml-2 text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded-full">
                   BETA
                 </span>
@@ -105,7 +105,7 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-              ¿Por qué PrestaChain?
+              ¿Por qué BrightLend?
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Finanzas descentralizadas accesibles para todos los mexicanos
@@ -239,13 +239,13 @@ export default function LandingPage() {
               <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-xl">P</span>
               </div>
-              <span className="text-xl font-bold text-white">PrestaChain</span>
+              <span className="text-xl font-bold text-white">BrightLend</span>
             </div>
             <p className="mb-4">
               Construido con ❤️ para ETH Monterrey 2025
             </p>
             <p className="text-sm">
-              © 2025 PrestaChain. Powered by Arbitrum & ENS.
+              © 2025 BrightLend. Powered by Arbitrum & ENS.
             </p>
           </div>
         </div>

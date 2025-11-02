@@ -26,7 +26,7 @@ export function Header() {
             <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">P</span>
             </div>
-            <span className="text-lg font-bold text-gray-900">PrestaChain</span>
+            <span className="text-lg font-bold text-gray-900">BrightLend</span>
           </div>
         </div>
 

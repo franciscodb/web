@@ -87,7 +87,7 @@ export default function AjustesPage() {
             Información de Wallet
           </CardTitle>
           <CardDescription>
-            Tu identidad en PrestaChain
+            Tu identidad en BrightLend
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
@@ -257,7 +257,7 @@ export default function AjustesPage() {
             <div>
               <p className="font-medium text-gray-900">Actualizaciones del Producto</p>
               <p className="text-sm text-gray-600">
-                Noticias y características nuevas de PrestaChain
+                Noticias y características nuevas de BrightLend
               </p>
             </div>
             <label className="relative inline-flex items-center cursor-pointer">

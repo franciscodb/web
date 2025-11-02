@@ -65,7 +65,7 @@ export default function DashboardLayout({
             <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl flex items-center justify-center">
               <span className="text-white font-bold text-xl">P</span>
             </div>
-            <span className="font-bold text-xl text-gray-900">PrestaChain</span>
+            <span className="font-bold text-xl text-gray-900">BrightLend</span>
           </div>
 
           {/* Navigation */}
@@ -103,7 +103,7 @@ export default function DashboardLayout({
                   <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl flex items-center justify-center">
                     <span className="text-white font-bold text-xl">P</span>
                   </div>
-                  <span className="font-bold text-xl text-gray-900">PrestaChain</span>
+                  <span className="font-bold text-xl text-gray-900">BrightLend</span>
                 </div>
                 <button
                   onClick={() => setSidebarOpen(false)}
@@ -149,7 +149,7 @@ export default function DashboardLayout({
                 <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold">P</span>
                 </div>
-                <span className="font-bold text-lg text-gray-900">PrestaChain</span>
+                <span className="font-bold text-lg text-gray-900">BrightLend</span>
               </div>
               <div className="w-10" /> {/* Spacer */}
             </div>
